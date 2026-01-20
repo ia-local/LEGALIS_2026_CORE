@@ -4,7 +4,7 @@
  * ROLE    : Contrôleur d'interface et moteur d'inférence (Frontend)
  */
 
-import LEGALIS_2026_CORE from '../LEGALIS_2026_CORE.js';
+import LEGALIS_2026_CORE from './LEGALIS_2026_CORE.js';
 import { LegalisChatbot } from './chatbot.js';
 
 document.addEventListener('DOMContentLoaded', () => {
