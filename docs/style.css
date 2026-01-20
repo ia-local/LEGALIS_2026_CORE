@@ -1,0 +1,119 @@
+/* * PROJECT : LÉGALIS-FR 2026 
+ * STYLE   : Institutional Government / Clean-Tech
+ * PALETTE : Bleu Institutionnel, Blanc Cassé, Vert Santé
+ */
+
+:root {
+    --gov-blue: #000091; /* Bleu officiel Marianne */
+    --gov-red: #E1000F;
+    --gov-light: #F5F7FA;
+    --gov-white: #FFFFFF;
+    --gov-text: #1E1E1E;
+    --gov-accent: #27AE60; /* Vert pour la filière chanvre */
+    --gov-border: #E5E5E5;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gov-light);
+    color: var(--gov-text);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- HEADER GOUVERNEMENTAL --- */
+.gov-header {
+    background: var(--gov-white);
+    padding: 1.5rem 5%;
+    border-bottom: 3px solid var(--gov-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.gov-logo {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--gov-blue);
+    letter-spacing: -1px;
+    border-left: 4px solid var(--gov-blue);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.gov-nav a {
+    text-decoration: none;
+    color: var(--gov-text);
+    font-weight: 500;
+    margin-left: 2rem;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.gov-nav a:hover {
+    color: var(--gov-blue);
+    border-bottom: 2px solid var(--gov-blue);
+}
+
+/* --- CONTENU PRINCIPAL --- */
+.gov-content {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* --- BOUTON FLOTTANT (TRIGGER CHATBOT) --- */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--gov-blue);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 145, 0.3);
+    transition: transform 0.3s, background 0.3s;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.floating-btn:hover {
+    transform: scale(1.05);
+    background: #0000b5;
+}
+
+/* --- FOOTER --- */
+.hud-footer {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--gov-border);
+    margin-top: 5rem;
+    background: var(--gov-white);
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .gov-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .gov-nav a {
+        margin: 0 10px;
+    }
+}

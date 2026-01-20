@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉGALIS-FR 2026 | Projet de Loi i-5049</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+
+    <header class="gov-header">
+        <div class="gov-logo">RÉPUBLIQUE FRANÇAISE</div>
+        <nav class="gov-nav">
+            <a href="#home" class="nav-link active" data-target="home">Accueil</a>
+            <a href="#loi" class="nav-link" data-target="loi">Projet de Loi</a>
+            <a href="#impact" class="nav-link" data-target="impact">Études d'impact</a>
+            <a href="#chanvre" class="nav-link" data-target="chanvre">Filière Chanvre</a>
+        </nav>
+    </header>
+
+    <main class="gov-content">
+        <section id="home" class="page-section active">
+            <div class="gov-card">
+                <h1>LÉGALIS-FR 2026</h1>
+                <p>Urgence législative : <span id="countdown" style="font-weight: bold; color: var(--gov-red);">Calcul en cours...</span></p>
+            </div>
+        </section>
+
+        <section id="loi" class="page-section">
+            <div class="gov-card">
+                <h2>Réforme du Code Pénal (Art. 222-37)</h2>
+                <p>Dépénalisation de l'usage personnel et régulation de la détention.</p>
+            </div>
+        </section>
+
+        <section id="impact" class="page-section">
+            <div class="gov-card">
+                <h2>Simulateur d'Impact Fiscal</h2>
+                <input type="range" id="volume-slider" min="1" max="10" step="0.5" value="5">
+                <p>Projection PIB : <span id="pib-res">+0.00%</span></p>
+                <p>Budget Santé : <span id="health-res">0 M€</span></p>
+            </div>
+        </section>
+
+        <section id="chanvre" class="page-section">
+            <div class="gov-card">
+                <h2>Souveraineté Industrielle</h2>
+                <p>Partenariat EuropaFi : Production de billets en fibre de chanvre.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="trigger-chat" class="floating-btn">
+        <span>💬 Consulter l'Expert IA</span>
+    </div>
+
+    <footer class="hud-footer">
+        <p>© 2026 LÉGALIS-FR - Initiative Citoyenne pour la Transparence et la Souveraineté</p>
+    </footer>
+
+</body>
+</html>

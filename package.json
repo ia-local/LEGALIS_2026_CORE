@@ -1,0 +1,16 @@
+{
+  "name": "canna",
+  "version": "1.0.0",
+  "description": "Système de plaidoyer digital pour la dépénalisation et la valorisation industrielle du chanvre en France (Horizon 2026).",
+  "main": "LEGALIS_2026_CORE.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉGALIS-FR 2026 | Projet de Loi i-5049</title>
+    <link rel="stylesheet" href="studio.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body class="resolve-ui dark-mode">
+
+    <header class="hud-header">
+        <div class="logo-warp">
+            <pre id="ascii-logo">
+  _      ______ _____          _      _____  _____ 
+ | |    |  ____/ ____|   /\   | |    |_   _|/ ____|
+ | |    | |__ | |  __   /  \  | |      | | | (___  
+ | |    |  __|| | |_ | / /\ \ | |      | |  \___ \ 
+ | |____| |___| |__| |/ ____ \| |____ _| |_ ____) |
+ |______|______\_____/_/    \_\______|_____|_____/ 2026
+            </pre>
+        </div>
+        <nav class="main-nav">
+            <button class="nav-link active" data-target="home">MANIFESTE</button>
+            <button class="nav-link" data-target="loi">LOI & RÉFORME</button>
+            <button class="nav-link" data-target="industrie">INDUSTRIE & EUROPAFI</button>
+            <button class="nav-link" data-target="fiscalite">FISCALITÉ & PIB</button>
+        </nav>
+        <div class="status-bar">
+            <span class="status-item">PORT: 1193</span>
+            <span class="status-item">KERNEL: v1.0.0</span>
+            <span class="status-pill">EXAMEN i-5049</span>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section id="home" class="page-section active">
+            <div class="glass-card">
+                <h1>Souveraineté, Santé, Transparence.</h1>
+                <p>En 2026, la France doit clore le chapitre de la prohibition pour ouvrir celui de la régulation industrielle et citoyenne.</p>
+                <div class="countdown-container">
+                    <span class="label">FIN MORATOIRE ANSM :</span>
+                    <span id="countdown">31 MARS 2026</span>
+                </div>
+                <div class="cta-group">
+                    <a href="https://petitions.assemblee-nationale.fr/initiatives/i-5049" target="_blank" class="btn-primary pulse">SIGNER LA PÉTITION i-5049</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="loi" class="page-section">
+            <div class="grid-2col">
+                <div class="glass-card">
+                    <h2>Réforme du Code Pénal</h2>
+                    <h3>Article 222-37-MOD</h3>
+                    <p class="diff-current">- Actuel : 10 ans de prison / 7.5M€ amende.</p>
+                    <p class="diff-proposed">+ Nouveau : Dépénalisation (25g / 3 plants).</p>
+                    <p class="meta-info">Objectif : Recentrage des forces de l'ordre sur la criminalité organisée.</p>
+                </div>
+                <div class="glass-card">
+                    <h2>Réduction des Risques (RDR)</h2>
+                    <ul class="check-list">
+                        <li>Contrôle qualité obligatoire (THC/CBD)</li>
+                        <li>Interdiction des cannabinoïdes de synthèse</li>
+                        <li>Fonds de prévention financé à 40%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="industrie" class="page-section">
+            <div class="glass-card full-width">
+                <h2>Le Partenariat</h2>
+                <div class="fiduciary-preview">
+                    <div class="banknote-mockup">
+                        <span class="value">EuropaFi 50€</span>
+                        <span class="material">FIBRE DE CHANVRE SOUVERAINE</span>
+                    </div>
+                    <div class="info-text">
+                        <p><strong>Innovation :</strong> Billets de banque en chanvre, 3x plus résistants que le coton traditionnel.</p>
+                        <p><strong>Santé :</strong> Textiles hospitaliers naturellement antibactériens réduisant les infections nosocomiales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fiscalite" class="page-section">
+            <div class="glass-card">
+                <h2>Simulateur d'Impact PIB</h2>
+                <div class="simulator">
+                    <label>Volume de vente estimé (Milliards €)</label>
+                    <input type="range" id="volume-slider" min="1" max="10" step="0.5" value="5">
+                    <div class="results">
+                        <div class="res-item">PIB : <span id="pib-res">+0.6%</span></div>
+                        <div class="res-item">Santé : <span id="health-res">0€</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="right-aside glass">
+        <div class="drawer-header">ASSISTANT @gemLegalHash</div>
+        <div id="chat-output" class="chat-box">
+            <p class="bot-msg">Bonjour. Je suis l'ADN du projet i-5049. Posez-moi une question sur la réforme ou EuropaFi.</p>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Requête LPU/Groq...">
+            <button id="send-btn">SEND</button>
+        </div>
+    </aside>
+
+    <footer class="hud-footer">
+        <p>© 2026 LÉGALIS-FR - Initiative Citoyenne pour la Transparence et la Souveraineté</p>
+    </footer>
+
+</body>
+</html>
