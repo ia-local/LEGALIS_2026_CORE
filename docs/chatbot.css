@@ -71,3 +71,129 @@
     border-radius: 6px;
     cursor: pointer;
 }
+/* Style des messages */
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+}
+
+.msg-user, .msg-bot, .msg-system {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+}
+
+.msg-user {
+    align-self: flex-end;
+    background-color: var(--gov-blue);
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.msg-bot {
+    align-self: flex-start;
+    background-color: #f0f2f5;
+    color: var(--gov-text);
+    border-bottom-left-radius: 2px;
+    border: 1px solid var(--gov-border);
+}
+
+.msg-system {
+    align-self: center;
+    background: none;
+    color: #666;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* Boutons de la sidebar */
+.btn-sidebar-main {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--gov-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* docs/chatbot.css */
+
+/* Zone des messages */
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: #F9FAFB;
+}
+
+/* Bulle Utilisateur (Citoyen) */
+.msg-user {
+    align-self: flex-end;
+    background: var(--gov-blue);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px 18px 2px 18px;
+    max-width: 75%;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,145,0.2);
+}
+
+/* Bulle Bot (Expert LÉGALIS) */
+.msg-bot {
+    align-self: flex-start;
+    background: white;
+    color: var(--gov-text);
+    padding: 10px 15px;
+    border-radius: 18px 18px 18px 2px;
+    max-width: 75%;
+    font-size: 0.9rem;
+    border: 1px solid var(--gov-border);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Messages Système */
+.msg-system {
+    align-self: center;
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+/* Sidebar - Amélioration des boutons */
+.btn-sidebar-main {
+    width: 100%;
+    background: var(--gov-blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-sidebar-main:hover {
+    opacity: 0.9;
+}
+
+#chat-history-list li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+#chat-history-list li:hover {
+    background: #E5EEFF;
+    color: var(--gov-blue);
+}
